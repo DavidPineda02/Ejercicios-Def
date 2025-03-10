@@ -11,7 +11,7 @@ def calcularGasto(cantAgua):
     if cantAgua >= 1 and cantAgua <= 50:
         return cuotFija
     elif cantAgua > 50 and cantAgua <= 200:
-        return  + cuotFija((cantAgua - 50) * 1000)
+        return cuotFija + ((cantAgua - 50) * 1000)
     elif cantAgua > 200:
         return cuotFija + ((cantAgua - 50) * 3000)
     else:
