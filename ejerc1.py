@@ -6,12 +6,14 @@
 # • Indicación: hazlo con tres ‘SI’, uno por cada opción. 
 
 def calcularGasto(cantAgua):
+    cuotFija = 600
+
     if cantAgua >= 1 and cantAgua <= 50:
-        return 0
+        return cuotFija
     elif cantAgua > 50 and cantAgua <= 200:
-        return cantAgua * 1000
+        return  + cuotFija((cantAgua - 50) * 1000)
     elif cantAgua > 200:
-        return cantAgua * 3000
+        return cuotFija + ((cantAgua - 50) * 3000)
     else:
         return -1
 
