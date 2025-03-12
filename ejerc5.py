@@ -1,6 +1,6 @@
 # Algoritmo Calcular la factorial de un número N.
 
-def calcular_factorial(n):
+def calcularFactorial(n):
     if n < 0:
         return "El Numero Ingresado es Negativo."
     elif n == 0:
@@ -18,7 +18,7 @@ def calcular_factorial(n):
 
 print("========== Numero Factorial ==========")
 num = int(input("\nDigite un Numero para Calcular su Factorial: "))
-resultado = calcular_factorial(num)
+resultado = calcularFactorial(num)
 
 print(f"El Factorial de {num} es: {resultado}")
 print("\n======================================")
